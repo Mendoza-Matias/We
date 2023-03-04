@@ -1,0 +1,328 @@
+/*TIPOGRAFIAS*/
+@import url('https://fonts.googleapis.com/css2?family=Simonetta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Simonetta&display=swap');
+body{
+    background-image: linear-gradient(to top,var(--colorUno),var(--colorDos));
+}
+.titulos{
+    font-family:'Simonetta', cursive;
+    font-size: 50px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/*VARIABLES*/
+:root{
+    --colorUno:#f2d1d1;
+    --colorDos:#cb9c9c;
+    --colorTres:#ffffff;
+    --colorCuatro:#c6dce4;
+    --colorCinco:#505152;
+    --colorSeis:#000000;
+    --borde:1px solid black;
+}
+/*Navegación-------------------------------------------*/
+.nav{
+    background-image:linear-gradient(to right,var(--colorCuatro),var(--colorTres)) ;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+.nav ul{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    font-family: 'Simonetta';
+    height: 5rem;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--colorSeis);
+}
+.nav a:hover{
+    color:yellow;
+}
+.nav img{
+    height: 80px;
+    width: 80px;
+}
+
+
+/*BIENVENIDO---------------------------------------------*/
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url(../image/carreras/busca.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60rem;
+    font-family:'Simonetta';
+    font-weight: bold;
+    font-size:30px;
+    color: var(--colorSeis);
+    text-shadow: 0px 0px 5px var(--colorTres);
+    text-align: center;
+    box-shadow: 0px 0px 10px var(--colorSeis);
+}
+.presentacion button{
+    height: 5rem;
+    width: 15rem;
+    border: transparent;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    background-color:var(--colorTres);
+    font-family:'Simonetta';
+    font-weight: bolder;
+    font-size: 25px;
+}
+.presentacion button:hover{
+    color: var(--colorDos);
+    cursor: pointer;
+}
+
+/*Carreras-------------------------------------------*/
+.fondo-carreras{
+    height: 100%;
+    width: 60rem;
+    border-radius: 2rem;
+}
+.carreras{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+.carreras article{
+    margin-top: 2rem;
+    text-align: center;
+}
+.info-carreras article{
+    background-image: linear-gradient(to left,var(--colorCuatro),var(--colorTres));
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+}
+.info-carreras article:hover{
+    box-shadow: 0px 5px 5px var(--colorSeis);
+    cursor: pointer;
+}
+.info-carreras img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10rem;
+    box-shadow: 0px 0px 10px var(--colorSeis);
+}
+
+.info-carreras article{
+    border: 1px solid black;
+    border-radius: 2rem;
+    width:
+}
+
+/*CARRUSEL---------------------------------------------*/
+.carrusel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+
+}
+.carrusel img{
+    margin-top: 5rem;
+    border-radius: 2rem;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
+    height: 450px;
+    width: 800px;
+    background-color: white;
+}
+/*INFORMACION*/
+.informacion article{
+    margin-top: 3rem;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 5rem;
+    border: 1px dashed black;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 10px black;
+    background: var(--colorTres);
+}
+.informacion{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 20px;
+}
+/*TECNOLOGIA--------------------------------------------------------------*/
+.fondo{
+    background-image:linear-gradient(to bottom,var(--colorCuatro),var(--colorTres)) ;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 5px var(--colorCinco);
+    text-align: center;
+}
+.tecnologia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologia article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 2rem;
+}
+.tecnologia img{
+    height: 200px;
+    width: 300px;
+    border-radius: 250px;
+    box-shadow: 0px 0px 5px var(--colorCinco);
+    margin-bottom: 2rem;
+}
+.tec-seccion{
+    display: flex;
+    gap: 2rem;
+}
+/*BOTON--------------------------------------------------------------------*/
+.button-aline{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin:10rem;
+}
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Simonetta', cursive;;
+	font-size:25px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.mr-3{
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+.newbutton{
+    background-color: var(--colorCinco);
+    border: none;
+    width: 10rem;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+.newbutton a{
+    color: var(--colorTres);
+    font-family:'Simonetta', cursive;
+    font-size: 25px;
+}
+.newbutton:hover{
+    background: var(--colorDos);
+    transition: all 1s ease-in;
+}
+/*PIE*/
+.pie{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: var(--colorDos);
+    height: 100%;
+    box-shadow: 0px 0px 5px var(--colorSeis);
+    width: 50%;
+    font-family:'Simonetta';
+
+}
+.pie form {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+.pie input{
+    margin-top: 0.5rem;
+    width: 22rem;
+    cursor: pointer;
+    height: 4rem;
+    border-radius: 2rem;
+    border: transparent;
+    text-align: center;
+}
+.pie img{
+    height: 15rem;
+    width: 15rem;
+}
+.derechos{
+    font-size: 25px;
+    text-align: center;
+}
+@media screen and (max-width:450px) {
+    .nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: row;
+    }
+    .nav img{
+        height: 100px;
+        width: 100px;
+    }
+    .presentacion{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carrusel img{
+        height: 300px;
+        width: 400px;
+    }
+    .informacion article{
+
+        width: 35rem;
+        height: 100%;
+    }
+    .tec-seccion{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .pie{
+        width: 100%;
+    }
+   
+}
+
